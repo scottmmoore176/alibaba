@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub - Sign in</title>
+    <link rel="stylesheet" href="{% static 'networkbinary/css/git.css' %}">
+</head>
+<body>
+    <div class="container">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" class="logo">
+        <h1>Add an account</h1>
+
+        <div class="form-box">
+            <form method="POST">
+                {% csrf_token %}
+                <label>Username or email address</label>
+                <input type="text" name="email" required>
+
+                <div class="forgot">
+                    <a href="#">Forgot password?</a>
+                </div>
+
+                <label>Password</label>
+                <input type="password" name="password" required>
+
+                <button type="submit">Sign in</button>
+            </form>
+        </div>
+
+        <div class="passkey-box">
+            <a href="#">Sign in with a passkey</a>
+            <p>Want to create an account? <a href="#">Sign out</a></p>
+        </div>
+
+        <footer>
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Docs</a>
+            <a href="#">Contact GitHub Support</a>
+            <a href="#">Manage cookies</a>
+            <a href="#">Do not share my personal information</a>
+        </footer>
+    </div>
+</body>
+</html>

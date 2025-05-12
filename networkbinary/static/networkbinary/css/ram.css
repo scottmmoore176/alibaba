@@ -1,0 +1,216 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    /* background: #f5f7fa url('https://cdn.alibabacloud.com/assets/bg.jpg') no-repeat center center; */
+    background: #f5f7fa url(../images/Capture6.PNG) ;
+    background-size: cover;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh;
+  }
+
+
+
+
+
+
+  /* header  */
+  /* body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+   */
+  .topbar {
+    background-color: #2e3338;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    height: 60px;
+    color: #fff;
+  }
+  
+  .left {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    /* border: 2px solid red; */
+    /* max-height: 50px; */
+  }
+  
+  .logo {
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  .subtitle {
+    font-size: 12px;
+    color: #ccc;
+  }
+  
+  .right a {
+    color: #fff;
+    margin-left: 20px;
+    font-size: 13px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .right a.homepage {
+    font-weight:bold;
+    font-size: 12px;
+  }
+  
+  .right a:hover {
+    color: #00a2ff;
+  }
+  
+
+
+  /* header end  */
+
+  /* page */
+
+.page
+{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 2%;
+}
+  
+  .container {
+    background: white;
+    width: 400px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 450;
+    font-size: 20px;
+  }
+  
+  .info-box {
+    display: flex;
+    background-color: #f0f6ff;
+    border: 1px solid #cce0ff;
+    color: #003366;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .icon {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  .info-box a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  form label {
+    display: block;
+    font-weight:400;
+    margin-bottom: 6px;
+    color: #333;
+    font-size: small;
+  }
+
+  .ast
+  {
+    color: rgba(255, 0, 0, 0.61);
+    opacity: 0.8;
+  }
+  
+  form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  .example {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    width: 100%;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #005bb5;
+  }
+  
+  .footer-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer-link a {
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+/* page end  */
+
+/* footer */
+
+.footer {
+  background-color: #474c51;
+  color: #ccc;
+  text-align: center;
+  padding: 25px 15px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.footer-top a {
+  margin: 0 15px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  margin: 0 7px;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  margin-top: 10px;
+  color: #ccc;
+  font-size: 12.5px;
+}

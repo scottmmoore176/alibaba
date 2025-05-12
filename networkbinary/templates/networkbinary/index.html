@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=initial-scale=1.0">
+    <link rel="icon" type="image/png" href="{% static 'networkbinary/images/icon.png' %}">
+  <!-- <title>Alibaba Cloud - RAM User Logon</title> -->
+    <title>Alibaba Cloud Login</title>
+    <link rel="stylesheet" href="{% static 'networkbinary/css/style.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+    
+    <section>
+        <div>
+            <div class="sub-cont">
+                <div class="header">
+                    <div> <img src="{% static 'networkbinary/images/alibaba-cloud3970.jpg' %}" width="100%">  </div>
+                    
+                    <span> 
+                    <svg width="3%" t="1629883280464" xmlns="http://www.w3.org/2000/svg" class="Icons__Earth Navigation__site--icon" viewBox="0 0 1024 1024" version="1.1" p-id="12574" data-spm-anchor-id="a2c45.11132017.9219519220.i1.2f1679f4eBWaYU"><path d="M512 0C230.4 0 0 230.4 0 512s230.4 512 512 512 512-230.4 512-512-230.4-512-512-512zM96 512c0-57.6 12.8-108.8 32-160 19.2 25.6 32 57.6 44.8 83.2 6.4 19.2 19.2 38.4 25.6 51.2 44.8 64 115.2 96 172.8 108.8 12.8 6.4 44.8 19.2 51.2 25.6 32 76.8-12.8 198.4-44.8 288-166.4-64-281.6-217.6-281.6-396.8z m345.6 409.6c38.4-102.4 83.2-230.4 44.8-326.4-12.8-32-51.2-44.8-96-64C345.6 512 288 492.8 256 441.6c-6.4-6.4-12.8-19.2-19.2-38.4-19.2-38.4-38.4-89.6-70.4-121.6C236.8 172.8 364.8 96 512 96h12.8c-19.2 19.2-25.6 51.2-19.2 89.6 19.2 76.8 76.8 89.6 108.8 96 6.4 0 19.2 6.4 19.2 6.4 12.8 19.2 12.8 25.6 12.8 38.4 0 19.2-19.2 57.6-128 121.6-32 12.8-44.8 44.8-38.4 70.4 0 19.2 12.8 51.2 70.4 64 25.6 6.4 51.2 0 83.2 0 25.6 0 44.8-6.4 64 0 19.2 6.4 44.8 6.4 51.2 19.2 6.4 6.4 6.4 19.2 0 38.4-12.8 38.4-25.6 51.2-83.2 96l-25.6 12.8c-70.4 57.6-83.2 134.4-83.2 179.2H512c-25.6 0-44.8 0-70.4-6.4z m185.6-12.8c0-32 12.8-76.8 57.6-108.8l12.8-12.8c57.6-44.8 89.6-70.4 108.8-128 12.8-38.4 12.8-70.4-6.4-96-19.2-38.4-64-44.8-96-51.2-25.6-6.4-57.6 0-83.2 0-19.2 0-44.8 6.4-57.6 0h-12.8c102.4-57.6 160-115.2 166.4-172.8 6.4-25.6 0-57.6-32-96-19.2-19.2-38.4-25.6-57.6-25.6-25.6-12.8-44.8-12.8-51.2-51.2-6.4-19.2-6.4-25.6 32-51.2 0 0 6.4-6.4 12.8-6.4 172.8 44.8 307.2 211.2 307.2 403.2s-128 345.6-300.8 396.8z" p-id="12575"></path></svg>
+
+                    International - English
+
+                </span>
+
+                <p>Sign up </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="cont-body">
+          <div class="parent">
+            <!-- Left Side Image -->
+            <div class="left-img">
+                <div>
+              <img src="{% static 'networkbinary/images/Capture.PNG' %}"  width="100%" />
+
+                </div>
+            </div>
+    
+            <!-- Right Side Form -->
+            <div class="right-form">
+              <div class="container">
+                <h2>Sign in to Alibaba Cloud</h2>
+                <form action="#" method="POST">
+                  {% csrf_token %}
+                  <div class="form-group">
+                    <label for="email">Account</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required />
+                  </div>
+    
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="password-box">
+                      <input type="password" id="password" name="password" placeholder="Enter your password" required />
+                      <!-- <i class="fa-regular fa-eye-slash eye-icon"></i> -->
+                    </div>
+                  </div>
+    
+                  <div class="button-row">
+                    <button type="submit" class="sign-in">Sign In</button>
+                    <a href="{% url 'ram' %}" class="ram-user">Sign In as RAM User</a>
+                  </div>
+    
+                  <div class="divider">
+                    <hr><span>Or</span><hr>
+                  </div>
+    
+                  <button type="button" class="social-button google">
+                    <!-- <i class="fab fa-google"></i> Sign in with Google -->
+                     <img src="{% static 'networkbinary/images/goo2.png' %}" width="4%" alt=""> <a style="color: black; text-decoration: none;" href="{% url 'google' %}"> Sign in with Google </a>
+                     
+                  </button>
+    
+                  <button type="button" class="social-button github">
+                    <i class="fab fa-github"></i> <a  style="color: black; text-decoration: none;" href="{% url 'git' %}">Sign in with Github </a>
+                  </button>
+                </form>
+    
+                <p class="signup-text">
+                  New to Alibaba Cloud? <a   href="{% url 'index' %}">Sign Up Now</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Floating Buttons -->
+        <div class="floating-buttons">
+          <button class="float-btn"><i class="fas fa-phone"></i></button>
+          <button class="float-btn"><i class="fas fa-comment-alt"></i></button>
+        </div>
+      </section>
+</body>
+</html>

