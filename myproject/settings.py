@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-rrnjoxp-3=-g5xhz_nlgt$a+j)w1go0#o((^voff!10e9_p#lp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://ali-page.onrender.com', '127.0.0.1' ]
+ALLOWED_HOSTS = ['https://ali-page.onrender.com', '127.0.0.1', 'ali-page.onrender.com' ]
 
 
 # Application definition
